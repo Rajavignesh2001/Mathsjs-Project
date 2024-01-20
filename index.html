@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <title>
+        FFF
+    </title>
+    <link rel="stylesheet" href="math.css">
+    <style>
+        @media only screen and (max-width:950px) {
+            .outline {
+                display: block;
+                float: none;
+                width: 100%;
+            }
+
+            .outline2 {
+                display: block;
+                float: none;
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+
+        @media only screen and (max-width:600px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            h3 {
+                font-size: 17px;
+            }
+
+            p {
+                font-size: 12px;
+                font-weight: bold;
+            }
+
+            .outline {
+                display: block;
+                border: 5px solid black;
+                float: none;
+                width: 100%;
+            }
+
+            .outline2 {
+                display: block;
+                border: 5px solid black;
+                float: none;
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body class="page">
+    <div class="outline">
+        <!--Factorial-->
+        <h1>Find Factorial</h1>
+        <h3>Enter the Number:</h3>
+        <input id="num1">
+        <button onclick="fact()"><strong>Find</strong></button>
+        <p>Result : <strong id="str1"></strong></p>
+        <script src="fact.js">
+        </script>
+
+        <!--Fibonacci-->
+        <h1>Find Fibonacci</h1>
+        <h3>Enter the Number:</h3>
+        <input id="num2">
+        <button onclick="fibo()"><strong>Find</strong></button>
+        <p>Result : <strong id="str2"></strong></p>
+        <script src="fibbo.js">
+        </script>
+
+        <!--Fizz Buzz-->
+        <h1>Find Fizz Buzz </h1>
+        <h3>Enter the Number:</h3>
+        <input id="num3">
+        <button onclick="findfb()"><strong id="but3">Find</strong></button>
+        <p>Result : <strong id="ans3"></strong></p>
+        <script src="FizzBuzzPgm.js">
+        </script>
+    </div>
+
+    <div class="outline2">
+        <!--calc-->
+        <h1>Calculate</h1>
+        <h3>Enter the Numbers:</h3>
+        <input id="avalue">
+        <input id="bvalue">
+        <div class="outline3">
+            <select id="perform" onchange="operation()">
+                <option value="default">Default</option>
+                <option value="addition">Add</option>
+                <option value="subraction">Sub</option>
+                <option value="multiplication">Mul</option>
+                <option value="divison">Div</option>
+                <option value="modulo">Mod</option>
+            </select>
+        </div>
+        <p>Result : <Strong id="ans4"></Strong></p>
+        <script src="calc.js">
+        </script>
+
+    </div>
+</body>
+
+</html>
